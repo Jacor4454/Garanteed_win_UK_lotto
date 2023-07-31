@@ -21,8 +21,13 @@ def generateRndTicket():
     output = [random.randint(1, 59) for _ in range (0, 6)]
 
     for i in range (0, 6):
-        while(output.count(output[i]) > 1):
-            output[i] = random.randint(1, 59)
+        if output.count(output[i]) > 2:
+            original = output.count(output[i])
+            while(output.count(output[i]) == original):
+                output[i] = random.randint(1, 59)
+        else:
+            while(output.count(output[i]) > 1):
+                output[i] = random.randint(1, 59)
 
 
     return output
