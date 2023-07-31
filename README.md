@@ -11,6 +11,8 @@ test_tickets.py will make a list of the tickets in tickets.txt and generate a gi
 
 tickets.txt does not have to be 27 tickets long for test_tickets.py so feel free to make your own ticket or tickets (following the format "xx,xx,xx,xx,xx,xx") and see how oftern you'd win
 
+Also to change the sample size of the test, simply change the "itter" variable in line 54 (or around there if I've changed the code)
+
 ## tickets.txt
 I have added a default tickets.txt, it isn't neccisary as generate_ticket.py will generate tickets too but there it is if you're only wanting to test lottery tickets
 
